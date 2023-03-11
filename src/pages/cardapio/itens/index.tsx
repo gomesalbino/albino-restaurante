@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Item from "./item";
-import cardapio from "./itens.json";
+import cardapio from "../../../data/cardapio.json";
 import styles from "./Itens.module.scss";
 
 interface Props{
@@ -52,7 +52,7 @@ function Itens(props: Props) {
     return (  
         <div className={styles.itens}>
             {lista.map(item =>(
-                <div>
+                <div key={item.id}>
                     <Item  key={item.id} {...item}/>
                 </div>
             ))}
