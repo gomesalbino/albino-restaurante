@@ -10,8 +10,10 @@ $veganos: #80aa40;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  
   &__imagem {
     min-width: 240px;
+    
     @media (max-width: $desktop_xsm) {
       width: 100%;
     }
@@ -20,6 +22,9 @@ $veganos: #80aa40;
       width: 100%;
     }
   }
+  &:hover {
+    background-color: $darkest-grey;
+  }
   &__descricao {
     display: flex;
     flex: 1;
@@ -27,6 +32,8 @@ $veganos: #80aa40;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 20px;
+    cursor: pointer;
+  
     @media (max-width: $desktop_xsm) {
       flex-direction: row;
       margin-top: 20px;

@@ -7,6 +7,8 @@ import { useState } from "react";
 import styles from "./Cardapio.module.scss";
 import Itens from "./itens";
 import stylesTema from "../../styles/Tema.module.scss";
+
+
 function Cardapio() {
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState<number | null>(null);

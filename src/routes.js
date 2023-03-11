@@ -4,6 +4,7 @@ import PaginaPadrao from "components/paginaPadrao";
 import Cardapio from "pages/cardapio";
 import Inicio from "pages/inicio";
 import NotFound from "pages/notFound";
+import Prato from "pages/prato";
 import Sobre from "pages/sobre";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -20,8 +21,8 @@ function AppRouter() {
                         <Route path="/cardapio" element={<Cardapio />} />
                         <Route path="/sobre" element={<Sobre />} />
                     </Route>
+                    <Route path="Prato/:id" element={<Prato />} />
                      <Route path="*" element={<NotFound />} />
-
                 </Routes>
             <Footer />
             </Router>
