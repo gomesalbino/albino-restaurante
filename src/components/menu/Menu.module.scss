@@ -2,7 +2,10 @@
 @import "styles/variaveis";
 @import "styles/breakPoints";
 
-
+.logo{
+  margin-left: 12rem;
+  margin-top: 1.5rem;
+}
 .menu {
     display: flex;
     padding: 20px $padding-horizontal;
@@ -18,19 +21,20 @@
     &__list {
       align-items: center;
       display: flex;
+      margin-left: 8rem;
     }
     &__link {
       list-style-type: none;
       padding: 0 20px;
       a {
-        color: $dark;
+        color: $titulo-menu;
         cursor: pointer;
         font-size: 24px;
         font-weight: 600;
         text-decoration: none;
         transition: .2s ease;
         &:hover {
-          color: $dark-grey;
+          color: $light-grey;
         }
       }
     }

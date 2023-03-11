@@ -19,7 +19,7 @@ function Menu() {
 
     return (
         <section>
-            <Logo />
+            <Logo className={styles.logo}/>
             <ul className={styles.menu__list}>
                 {rotas.map((rota, index) => (
                     <li key={index} className={styles.menu__link}>
