@@ -7,11 +7,10 @@ import nossaCasa from "assets/nossaCasa.png";
 import { Prato } from 'types/Prato';
 import { useNavigate } from "react-router-dom";
 
-type Props = typeof cardapio[0];
 
-function Inicio(props: Props) {
+
+function Inicio() {
     
-    const {id} = props;
 
     let pratosRecomendados = [...cardapio];
     pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3);
