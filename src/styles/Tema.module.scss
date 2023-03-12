@@ -1,5 +1,5 @@
-@import "./variaveis";
-@import "./breakpoints";
+@import "../styles/variaveis";
+@import "../styles/breakPoints";
 .container {
   padding: 50px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
